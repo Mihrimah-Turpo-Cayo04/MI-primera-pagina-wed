@@ -1,22 +1,18 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template
 
-app = Flask(__name__)
-
+app = Flask(_name_)
 
 @app.route('/')
-def form():
-    return render_template('pagina1.html')
-
+def pagina1():
+    return render_template('pagina1.html')  # Página de introducción
 
 @app.route('/pagina2')
-def form2():
-    return render_template('pagina2.html')
-
+def pagina2():
+    return render_template('pagina2.html')  # Página del formulario
 
 @app.route('/pagina3')
-def form3():
-    return render_template('pagina3.html')
+def pagina3():
+    return render_template('pagina3.html')  # Página de resultados
 
-
-if __name__ == '__main__':
-    app.run()
+if _name_ == '_main_':
+    app.run(debug=True)
