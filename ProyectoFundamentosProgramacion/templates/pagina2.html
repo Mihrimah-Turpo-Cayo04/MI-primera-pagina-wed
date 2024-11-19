@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Huella de Carbono - Formulario</title>
-    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Calculadora de Huella de Carbono</h1>
+        <img src="./imgRES.JPG" width="55%">
     </header>
 
-    <section id="formulario">
-        <h2>Introduce tus datos</h2>
-        <form id="formData">
-            <label for="transporte">Kilómetros recorridos por semana (en km):</label>
-            <input type="number" id="transporte" name="transporte" required>
+    <section>
+        <h2>Formulario de Entrada de Datos</h2>
+        <h3>Datos sobre transporte:</h3>
+        <input placeholder="Ejemplo: 50 km">
+        <br>
 
-            <label for="energia">Consumo mensual de electricidad (en kWh):</label>
-            <input type="number" id="energia" name="energia" required>
+        <h3>Datos sobre consumo de energía:</h3>
+        <input placeholder="Ejemplo: 100 kWh">
+        <br>
 
-            <label for="dieta">Tipo de dieta:</label>
-            <select id="dieta" name="dieta">
-                <option value="vegetariana">Vegetariana</option>
-                <option value="omnivora">Omnívora</option>
-                <option value="altaCarne">Alta en carne</option>
-            </select>
+        <h3>Tipo de dieta:</h3>
+        <button>Dieta Vegetariana</button>  
+        <button>Dieta Omnívora</button>
+        <br>
 
-            <label for="dispositivos">Horas diarias usando dispositivos electrónicos:</label>
-            <input type="number" id="dispositivos" name="dispositivos" required>
+        <h3>Horas diarias usando dispositivos electrónicos:</h3>
+        <input placeholder="Ejemplo: 5 horas">
+        <br>
 
-            <button type="button" id="calcularBtn">Calcular Huella de Carbono</button>
-        </form>
+        <h3>Huella hídrica:</h3>
+        <input placeholder="Ejemplo: 2000 litros">
+        <br>
+
+        <h3>Residuos generados:</h3>
+        <input placeholder="Ejemplo: 5 kg">
+        <br>
+
+        <h3>¿Usas energía renovable?</h3>
+        <button>Sí</button>  
+        <button>No</button>
+        <br>
+
+        <h2>Calcula tu Huella de Carbono</h2>
+        <button>Calcular Huella de Carbono</button>
     </section>
 
     <footer>
-        <a href="/">Volver a la Introducción</a> | <a href="/pagina3">Ver Resultados</a>
+        <a href="pagina3.html">Ver Resultados</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
