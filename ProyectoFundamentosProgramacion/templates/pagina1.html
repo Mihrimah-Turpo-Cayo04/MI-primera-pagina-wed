@@ -3,105 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Huella de Carbono</title>
-
-
-    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <title>Calculadora de Huella de Carbono - Introducción</title>
 </head>
-
 <body>
-    <!-- Encabezado principal con imagen relacionada -->
     <header>
         <h1>Calculadora de Huella de Carbono</h1>
         <img src="./IMAGEN.JPG.webp" width="50%">
     </header>
 
-    <!-- Sección de introducción sobre la huella de carbono -->
     <section>
         <h2>¿Qué es la Huella de Carbono?</h2>
-        <p>La huella de carbono es un indicador ambiental. Se trata de una "/n"
-            evaluación numérica de la emisión de gases de efecto invernadero 
-            (GEI) producidos por un individuo, organización, evento o producto.
-            Cabe destacar que puede distinguirse entre huella primaria o secundaria.</p> 
-        <p>La huella primaria son las emisiones directas de CO2 sobre las que se 
-            tiene control directo. En general, son las que proceden del combustible 
-            empleado en el hogar y por el transporte.
-            En cuanto a la secundaria, tiene en cuenta las emisiones indirectas de 
-            todo el ciclo de vida de los productos utilizados (ya sea alimentos o 
-            tecnología). Incluyen la manufactura y descarte.</p>
-        <p>Desde una búsqueda en Google hasta los procesos de una gran industria, 
-            todo puede ser evaluado mediante la huella de carbono. Si quieres saber 
-            cómo hacerlo, aprende con nuestro curso de cálculo de huella de carbono. 
-            Desde Geoinnova también ofrecemos hacer el cálculo de huella de carbono 
-            para empresas y todos los trámites necesarios con la administración.</p>
-        <p>Es importante mencionar que las emisiones de carbono no son uniformes. 
-            Principalmente, se concentran en áreas industriales y grandes ciudades.
-             Cuando se habla sobre las emisiones de los países, debemos diferenciar 
-             entre aquellas por habitante y las totales.</p>
+        <p>La huella de carbono es un indicador ambiental...</p>
     </section>
 
-    <!-- Sección sobre el objetivo de la calculadora -->
     <section>
         <h2>Objetivo de la Calculadora de Huella de Carbono</h2>
-        <p>Una calculadora de huella de carbono ayuda a medir las emisiones de gases
-             que generamos con nuestras actividades diarias. Su objetivo es concienciar 
-             sobre el impacto ambiental y ayudar a reducirlo, promoviendo un futuro más 
-             sostenible.</p>
+        <p>Una calculadora de huella de carbono ayuda a medir las emisiones de gases...</p>
     </section>
 
-    <!-- Sección sobre el objetivo del estudio o proyecto -->
     <section>
         <h2>Objetivo del Estudio o Proyecto</h2>
-        <p>El objetivo del estudio o proyecto es investigar y proponer soluciones 
-            a un problema específico, contribuyendo al conocimiento o mejora en ese área.</p>
+        <p>El objetivo del estudio o proyecto es investigar y proponer soluciones...</p>
     </section>
 
-    <!-- Sección de funcionamiento de la calculadora -->
-    <section>
-        <h2>¿Cómo Funciona la Calculadora de Huella de Carbono?</h2>
-        <p>La calculadora recopila información sobre diversas actividades, 
-            como el uso de energía, transporte y dieta, y estima las emisiones
-             de CO₂ generadas por cada actividad.</p>
-    </section>
-
-    <!-- Formulario para el cálculo de la huella de carbono -->
-    <section id="formulario">
-        <h2>Introduce tus datos</h2>
-        <form id="formData">
-            <label for="transporte">Kilómetros recorridos por semana (en km):</label>
-            <input type="number" id="transporte" name="transporte" required>
-
-            <label for="energia">Consumo mensual de electricidad (en kWh):</label>
-            <input type="number" id="energia" name="energia" required>
-
-            <label for="dieta">Tipo de dieta:</label>
-            <select id="dieta" name="dieta">
-                <option value="vegetariana">Vegetariana</option>
-                <option value="omnivora">Omnívora</option>
-                <option value="altaCarne">Alta en carne</option>
-            </select>
-
-            <label for="dispositivos">Horas diarias usando dispositivos electrónicos:</label>
-            <input type="number" id="dispositivos" name="dispositivos" required>
-
-            <button type="button" id="calcularBtn">Calcular Huella de Carbono</button>
-        </form>
-    </section>
-
-    <!-- Sección de resultados -->
-    <section id="resultados">
-        <h2>Resultados:</h2>
-        <p id="resultadoText"></p>
-    </section>
-
-    <!-- Sección de recomendaciones -->
-    <section id="recomendaciones">
-        <h2>Recomendaciones:</h2>
-        <ul id="recomendacionesList"></ul>
-    </section>
-
-    <!-- Archivo JavaScript principal -->
-    <script src="script.js"></script>
+    <footer>
+        <a href="/pagina2">Ir a la Calculadora</a>
+    </footer>
 </body>
 </html>
 
